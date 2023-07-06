@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family= Roboto :wght@100;300;400;700 & display=swap');
+
+body{
+    background-color: rgb(45, 50, 48);
+    font-family: 'Roboto', sans-serif;
+    color: rgb(14, 13, 13);
+    text-align: center;
+    }
+
+.box-nav{
+    background-color: rgb(216, 234, 228);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.box{
+    background: rgb(216, 234, 228);
+    position: absolute; /*para ocupar somente o espaço dela na pagina*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* para ficar no centro da pagina do eixo x e y */
+    padding: 15px; /* para afastar os itens das bordas */
+    border-radius: 15px;
+}
+
+input{
+    padding: 10px; /* para aumentar o espaço de digito dentro do input*/
+    border: none; /*  tirar as bordas*/
+    outline: none; /* tirar as linhas de fora*/
+    border-radius: 10px;
+    font-size: 15px;
+    width: 50%;
+}
+
+button{
+    font-size: 12px;
+    padding: 10px; /* para aumentar o espaço de digito dentro do input*/
+    border: none; /*  tirar as bordas*/
+    outline: none;
+    background-color: rgb(45, 50, 48); /*  mudar a cor do botão*/
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: rgb(80, 105, 205);
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Exercicio 01</title>
+</head>
+<body>
+    <div class="box-nav">
+        <h1>Algoritimos e Lógica de Programação</h1>
+    </div>
+
+
+    <div class="box">
+        <p>Leia o valor de um input e mostre em um alert </p>
+        <input type="text" name="" id="num" placeholder="Digite um valor"><br><br>
+        <button onclick="go()">Enviar</button>
+    </div>
+
+
+                <!-- 2 passos ler e depois mostrar no alert com isso teremos que adcionar o evento onclick no botom e um ID no input-->
+
+                <!-- 1º ler o input = unction go(){
+            var valueinput = document.getElementById('num').value;
+        }
+                     2º mostrar no alert  = alert(valueinput);-->
+
+    <script>
+        function go(){
+            var valueinput = document.getElementById('num').value;
+            alert(valueinput);
+        }
+    </script>
+</body>
+</html>
