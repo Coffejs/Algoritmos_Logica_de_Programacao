@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Exercicio 03</title>
+</head>
+<body>
+    <div class="box-nav">
+        <img src="/src/topjavascript.png" alt="logo" srcset="">
+        <h1>Algoritimos e Lógica de Programação</h1>
+    </div>
+
+
+    <div class="box">
+        <p> Leia as idades de duas crianças.<br>Após, calcular e mostrar a soma das idades e a média. </p>
+        <input type="text" name="" id="crianca1" placeholder="Digite a idade da criança 1"><br><br>
+        <input type="text" name="" id="crianca2" placeholder="Digite a idade da criança 2"><br><br>
+
+        <button onclick="somamedia()">Enviar</button>
+    </div>
+
+ <!-- parseInt é para converter de string para numeros-->
+
+    <script>
+        function somamedia(){
+
+            var idade1 = parseInt(document.querySelector('#crianca1').value);
+            var idade2 = parseInt(document.querySelector('#crianca2').value);
+            var soma = idade1 + idade2;
+            var media = soma / 2;
+
+                console.log('soma' + soma);
+                console.log('média' + media);
+        }
+    </script>
+</body>
+</html>

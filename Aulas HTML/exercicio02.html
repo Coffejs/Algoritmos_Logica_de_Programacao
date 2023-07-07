@@ -4,22 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style.css">
-    <title>Exercicio 01</title>
+    <title>Exercicio 02</title>
 </head>
 <body>
     <div class="box-nav">
+        <img src="/src/topjavascript.png" alt="logo" srcset="">
         <h1>Algoritimos e Lógica de Programação</h1>
     </div>
 
 
     <div class="box">
-        <p>Leia o valor de um input e mostre em um alert </p>
-        <input type="text" name="" id="num" placeholder="Digite um valor"><br><br>
+        <p>Leia valores A e B.<br> Os valores entre as duas variáveis, a variável A passa a possuir o valor da variável B e a variável B passa a possuir o valor da variável A </p>
+        <input type="text" name="" id="num_a" placeholder="Digite o valor A">
+        <br><br>
+        <input type="text" name="" id="num_b" placeholder="Digite o valor B">
+        <br><br>
         <button onclick="go()">Enviar</button>
     </div>
-
-
     <script>
+            function go(){
+                var a = document.getElementById('num_a').value;
+                var b = document.getElementById('num_b').value;
+                var c = b;
+                var b = a;
+                var a = c;
+
+                console.log('variável a:' + a);
+                console.log('variável b:' + b);
+
+            }
+            
 
     </script>
 </body>
