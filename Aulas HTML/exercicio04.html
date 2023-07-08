@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Exercicio 04</title>
+</head>
+<body>
+    <div class="box-nav">
+        <img src="../assets/logo/topjavascript.png" alt="logo" srcset="">
+        <h1>Algoritimos e Lógica de Programação</h1>
+    </div>
+
+
+    <div class="box">
+        <p>Leia 2 números.<br>Efetue as 4 operações matemáticas e mostre os resultados<br> </p>
+        <input type="number" class="number" name="operation" id="value1" placeholder="Digite um valor A"><br><br>
+        <input type="number" class="number" name="operation" id="value2" placeholder="Digite um valor B"><br><br>
+
+        <!-- o FOR do label sempre se refere ao ID -->
+        <input type="radio" name="operation" id="adicao" value="adicao">
+       <label for="adicao">Adição</label><br><br>
+
+       <input type="radio" name="operation" id="subtracao" value="subtracao">
+       <label for="subtracao">Subtração</label><br><br>
+
+       <input type="radio" name="operation" id="multiplicacao" value="multiplicacao">
+       <label for="multiplicacao">Mutiplicação</label><br><br>
+
+       <input type="radio" name="operation" id="divisao" value="divisao">
+       <label for="divisao">Divisão</label><br><br>
+
+       <!-- crio a função onclick no button com o mesmo nome da função -->
+
+        <button onclick="calcular()">Enviar</button>
+    </div>
+<!-- o PARSEINT é para transformar de string para number -->
+
+    <script>
+
+        function calcular(){
+            var a = parseInt(document.querySelector('#value1').value);
+            var b = parseInt(document.querySelector('#value2').value);
+            var selectOperation = document.querySelector('input[name="operation"]:checked').value;
+            var nameOperation,calculo;
+            
+            if(selectOperation == 'adicao'){
+
+                nameOperation = 'Adição';
+                calculo = a + b;
+            }
+            else if(selectOperation == 'subtracao'){
+
+            nameOperation = 'Subtração';
+            calculo = a - b;
+            }     
+            else if(selectOperation == 'multiplicacao'){
+
+            nameOperation = 'Multiplicação';
+            calculo = a * b;
+            }   
+            else if(selectOperation == 'divisao'){
+
+            nameOperation = 'Divisão';
+            calculo = a / b;
+            }   
+
+
+            alert(nameOperation+':'+calculo);
+            //console.log(calculo);            
+        }
+
+    </script>
+    <!-- Posso mostrar o resultado no   console.log(calculo); até mesmo no alert-->
+</body>
+</html>
