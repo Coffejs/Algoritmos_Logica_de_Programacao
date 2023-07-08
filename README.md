@@ -1,8 +1,10 @@
  
  <h2 align="center"> Algoritmos e Lógica de Programação com JavaScript</h2>
 
-<img src="assets/gif/operacoes%20matemáticas.gif" alt="foto-projeto" width="50%">
-</img>
+<div align="center">
+    <img src="assets/gif/operacoes%20matemáticas.gif" alt="foto-projeto" width="70%">
+    </img>
+</div>
 
 
 
